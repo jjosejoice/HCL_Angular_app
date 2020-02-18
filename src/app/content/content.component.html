@@ -1,0 +1,8 @@
+<ng-container>
+    <app-dropdown [dropDown]=dropDownRegion (selectedValue)="selectedEvent($event)"></app-dropdown>
+    <br/>
+    <app-dropdown [disabled]="getIsSelected()" [dropDown]=dropDownCountry (selectedValue)="selectedEvent($event)"></app-dropdown>
+    <br/>
+</ng-container>
+
+<app-table-list [dataSource]="details"></app-table-list>
